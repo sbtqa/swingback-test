@@ -1,7 +1,7 @@
 #language:en
+@SB_PF
 Feature: testswingback
 
-  @SB_PF
   Scenario: Test
 
     * user is on the page "Main page"
@@ -51,3 +51,22 @@ Feature: testswingback
     * user select the tab "Table" on the tabbed pane "Panes2"
     * user (select first table row) "Table"
     * user (push button) "Accept"
+
+#  Scenario: Test2
+#
+#    * user is on the page "Main page"
+#
+#    #  custom starting application
+#    * user open the application cust
+#
+#  Scenario Outline: Test3
+#
+#    * user is on the page <name>
+#
+#      #  custom starting application
+#    * user open the application cust
+#    Examples:
+#      | name  |
+#      | One   |
+#      | Two   |
+#      | Three |

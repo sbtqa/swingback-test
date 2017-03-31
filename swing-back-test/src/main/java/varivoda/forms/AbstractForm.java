@@ -14,7 +14,7 @@ public class AbstractForm extends Form {
     If this class doesn't contain a method with necessary title it method will be searched in super class (Form).
     If the super class doesn't contains this method a NoSuchMethodException will be thrown.
      */
-    @ActionTitle("нажимает на кнопку")
+//    @ActionTitle("нажимает на кнопку")
     @ActionTitle("push button")
     public void pushButton(String title) {
         System.out.println("push button from AbstractForm!");
