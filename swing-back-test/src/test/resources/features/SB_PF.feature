@@ -6,6 +6,18 @@ Feature: testswingback
 
     * user is on the page "Main page"
 
+
+#    !!!
+#    Этот шаг, должен дергать page-factory, но он преобразуется в
+#  ru.sbtqa.tag.swingback.UserActionTwoParams:::==!!SECRET!!==:::user (fill the field) "input" "find for me this"
+
+
+#    * user (fill the field) "input" "find for me this"
+
+
+
+
+#    * wait 30 sec
     #  custom starting application
     * user open the application cust
 

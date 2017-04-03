@@ -3,10 +3,9 @@ package varivoda.stepdefs;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
-import cucumber.runtime.Runtime;
-import gherkin.I18n;
 import org.netbeans.jemmy.JemmyProperties;
 import org.netbeans.jemmy.TestOut;
+import ru.sbtqa.tag.pagefactory.PageFactory;
 import ru.sbtqa.tag.swingback.AppManager;
 
 import java.io.PrintStream;
@@ -42,5 +41,6 @@ public class StepDefs {
     @After
     public void closeApp() {
         AppManager.getInstance().stopApplication();
+        PageFactory.dispose();
     }
 }
