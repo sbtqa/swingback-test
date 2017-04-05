@@ -13,10 +13,7 @@ Feature: testswingback
 
 
 #    * user (fill the field) "input" "find for me this"
-
-
-
-
+#
 #    * wait 30 sec
     #  custom starting application
     * user open the application cust

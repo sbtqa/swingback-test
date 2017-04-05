@@ -1,11 +1,9 @@
 package varivoda.stepdefs;
 
-import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import org.netbeans.jemmy.JemmyProperties;
 import org.netbeans.jemmy.TestOut;
-import ru.sbtqa.tag.pagefactory.PageFactory;
 import ru.sbtqa.tag.swingback.AppManager;
 
 import java.io.PrintStream;
@@ -13,13 +11,13 @@ import java.util.concurrent.Callable;
 
 
 public class StepDefs {
-
-
+    
+    
     @Before
     public void beforeTest() {
-
+        
     }
-
+    
     /**
      * Custom starting the application. With switching off logging with jemmy
      */
@@ -33,14 +31,5 @@ public class StepDefs {
                 return null;
             }
         });
-    }
-
-    /**
-     * Always close the application after tests
-     */
-    @After
-    public void closeApp() {
-        AppManager.getInstance().stopApplication();
-        PageFactory.dispose();
     }
 }
