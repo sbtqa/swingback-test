@@ -1,10 +1,9 @@
 #language:en
+@first_PF
 Feature: testswingback
 
-  @engTest
   Scenario: Test
 
-    #  custom starting application
     * user open the application cust
 
     #  switching current form in context to form with title "Main form"
@@ -49,3 +48,10 @@ Feature: testswingback
     * user select the tab "Table" on the tabbed pane "Panes2"
     * user (select first table row) "Table"
     * user (push button) "Accept"
+
+
+    * user is on the page "Main page"
+    * user (fill the field) "input" "как стать феей"
+    * user (click the button) "submit"
+    * user is on the page "Search page"
+    * user (click first link)

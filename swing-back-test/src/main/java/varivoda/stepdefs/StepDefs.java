@@ -1,6 +1,6 @@
 package varivoda.stepdefs;
 
-import cucumber.api.java.Before;
+import cucumber.api.java.After;
 import cucumber.api.java.en.And;
 import org.netbeans.jemmy.JemmyProperties;
 import org.netbeans.jemmy.TestOut;
@@ -13,9 +13,9 @@ import java.util.concurrent.Callable;
 public class StepDefs {
     
     
-    @Before
-    public void beforeTest() {
-        
+    @After
+    public void after() {
+         AppManager.getInstance().stopApplication();
     }
     
     /**
