@@ -16,6 +16,6 @@ public class SearchPage extends Page {
     
     @ActionTitle("click first link")
     public void clickFirstLink() {
-        PageFactory.getDriver().findElement(By.xpath(".//*[@id='rso']/div[1]//div[@class='g'][1]//*[@class='r']//a")).click();
+        PageFactory.getDriver().findElement(By.xpath("//div[@id='search']//a")).click();
     }
 }

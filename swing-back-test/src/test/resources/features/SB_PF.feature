@@ -8,7 +8,7 @@ Feature: testswingback
 
     * user (fill the field) "input" "как стать феей"
 
-    * user (click the button) "submit"
+    * user (press the key) "Enter"
 
     * user is on the page "Search page"
 
